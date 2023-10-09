@@ -1,12 +1,8 @@
 # AI-based PR reviewer and summarizer
 
-[![Discord](https://img.shields.io/badge/Join%20us%20on-Discord-blue?logo=discord&style=flat-square)](https://discord.gg/GsXnASn26c)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub](https://img.shields.io/github/last-commit/coderabbitai/ai-pr-reviewer/main?style=flat-square)](https://github.com/coderabbitai/ai-pr-reviewer/commits/main)
-
 ## Overview
 
-CodeRabbit `ai-pr-reviewer` is an AI-based code reviewer and summarizer for
+Entelligence.AI `ai-pr-reviewer` is an AI-based code reviewer and summarizer for
 GitHub pull requests using OpenAI's `gpt-3.5-turbo` and `gpt-4` models. It is
 designed to be used as a GitHub Action and can be configured to run on every
 pull request and review comments
@@ -44,21 +40,12 @@ configure the required environment variables, such as `GITHUB_TOKEN` and
 FAQs, you can refer to the sections below.
 
 - [Overview](#overview)
-- [Professional Version of CodeRabbit](#professional-version-of-coderabbit)
 - [Reviewer Features](#reviewer-features)
 - [Install instructions](#install-instructions)
-- [Conversation with CodeRabbit](#conversation-with-coderabbit)
+- [Conversation with Entelligence.AI](#conversation-with-Entelligence.AI)
 - [Examples](#examples)
 - [Contribute](#contribute)
 - [FAQs](#faqs)
-
-## CodeRabbit Pro
-
-The professional version of `openai-pr-reviewer` project is now available at
-[coderabbit.ai](http://coderabbit.ai). Building upon our open source foundation,
-CodeRabbit Pro offers premium features including enhanced context and superior
-noise reduction, dedicated support, and our ongoing commitment to improve code
-reviews. Moreover, CodeRabbit Pro is free for open source projects.
 
 ## Install instructions
 
@@ -88,7 +75,7 @@ jobs:
   review:
     runs-on: ubuntu-latest
     steps:
-      - uses: coderabbitai/ai-pr-reviewer@latest
+      - uses: Entelligence.AI/ai-pr-reviewer@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -131,13 +118,13 @@ value. For example, to review docs/blog posts, you can use the following prompt:
 
 ```yaml
 system_message: |
-  You are `@coderabbitai` (aka `github-actions[bot]`), a language model
+  You are `@Entelligence.AI` (aka `github-actions[bot]`), a language model
   trained by OpenAI. Your purpose is to act as a highly experienced
   DevRel (developer relations) professional with focus on cloud-native
   infrastructure.
 
   Company context -
-  CodeRabbit is an AI-powered Code reviewer.It boosts code quality and cuts manual effort. Offers context-aware, line-by-line feedback, highlights critical changes,
+  Entelligence.AI is an AI-powered Code reviewer.It boosts code quality and cuts manual effort. Offers context-aware, line-by-line feedback, highlights critical changes,
   enables bot interaction, and lets you commit suggestions directly from GitHub.
 
   When reviewing or generating content focus on key areas such as -
@@ -158,15 +145,15 @@ system_message: |
 
 </details>
 
-## Conversation with CodeRabbit
+## Conversation with Entelligence.AI
 
 You can reply to a review comment made by this action and get a response based
 on the diff context. Additionally, you can invite the bot to a conversation by
-tagging it in the comment (`@coderabbitai`).
+tagging it in the comment (`@Entelligence.AI`).
 
 Example:
 
-> @coderabbitai Please generate a test plan for this file.
+> @Entelligence.AI Please generate a test plan for this file.
 
 Note: A review comment is a comment made on a diff or a file in the pull
 request.
@@ -178,23 +165,8 @@ to review documentation, you can ignore PRs that only change the documentation.
 To ignore a PR, add the following keyword in the PR description:
 
 ```text
-@coderabbitai: ignore
+@Entelligence.AI: ignore
 ```
-
-## Examples
-
-Some of the reviews done by ai-pr-reviewer
-
-![PR Summary](./docs/images/PRSummary.png)
-
-![PR Release Notes](./docs/images/ReleaseNotes.png)
-
-![PR Review](./docs/images/section-1.png)
-
-![PR Conversation](./docs/images/section-3.png)
-
-Any suggestions or pull requests for improving the prompts are highly
-appreciated.
 
 ## Contribute
 
@@ -248,7 +220,7 @@ jobs:
   review:
     runs-on: ubuntu-latest
     steps:
-      - uses: coderabbitai/ai-pr-reviewer@latest
+      - uses: Entelligence.AI/ai-pr-reviewer@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
