@@ -723,7 +723,7 @@ ${
 <details>
 <summary>Tips</summary>
 
-### Chat with <img src="https://avatars.githubusercontent.com/in/347564?s=41&u=fad245b8b4c7254fe63dd4dcd4d662ace122757e&v=4" alt="Image description" width="20" height="20">  Entelligence.AI Bot (\`@Entelligence.AI\`)
+### Chat with <img src="https://avatars.githubusercontent.com/u/142467192?s=400&u=3da2f7af3e822212fa3bcaba5ae4cc6620a7f187&v=4" alt="Image description" width="20" height="20">  Entelligence.AI Bot (\`@Entelligence.AI\`)
 - Reply on review comments left by this bot to ask follow-up questions. A review comment is a comment on a diff or a file.
 - Invite the bot into a review comment chain by tagging \`@Entelligence.AI\` in a reply.
 
