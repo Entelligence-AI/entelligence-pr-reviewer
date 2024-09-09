@@ -460,14 +460,6 @@ ${SHORT_SUMMARY_END_TAG}
 
 ---
 
-<details>
-<summary>Uplevel your code reviews with Entelligence.AI Pro</summary>
-
-### Entelligence.AI Pro
-
-If you like this project, please support us by purchasing the [Pro version](https://Entelligence.AI.ai). The Pro version has advanced context, superior noise reduction and several proprietary improvements compared to the open source version. Moreover, Entelligence.AI Pro is free for open source projects.
-
-</details>
 `
 
   statusMsg += `
